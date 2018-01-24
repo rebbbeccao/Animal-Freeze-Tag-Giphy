@@ -1,0 +1,34 @@
+body {
+    font: 20px arial, serif;
+    background: lightcyan
+}
+
+form {
+    float: right;
+    width: 25%;
+    padding: 12px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+button, #submit-animal-button {
+    padding: 10px 15px;
+    font: 18px arial, serif;
+    color: white;
+    background: teal;
+    margin: 8px;
+}
+
+.animal-button {
+    padding: 10px;
+}
+
+ #animals {
+    float: left; 
+    padding: 20px;
+    width: 70%;
+ } 
