@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Animals GifTastic</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
 </head>
+
 <body>
+    <div class='container'>
+        <div class='row'>
 
-    <div id="animal-buttons"></div>
+            <div id="animal-buttons"></div>
+        </div>
+        <div class='row'>
+            <div class='col-sm-6'>
+                <form id="add-animal-form">
+                    <label for="animal-input">Add an animal</label>
+                    <input type="text" id="animal-input">
+                    <br>
 
-    <form id="add-animal-form">
-        <label for="animal-input">Add an animal</label>
-        <input type="text" id="animal-input"><br>
+                    <input type="button" id="submit-animal-button" value="Submit">
+                </form>
+            </div>
+            <div class='col-sm-6'>
+                <div id="animals"></div>
+            </div>
 
-        <input type="button" id="submit-animal-button" value="Submit">
-    </form>
-
-    <div id="animals"></div>
+        </div>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="./assets/javascript/app.js"></script>
 </body>
+
 </html>
