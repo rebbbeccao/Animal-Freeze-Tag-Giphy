@@ -6,35 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Animals GifTastic</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
 
 </head>
 
+
 <body>
     <div class='container'>
+        <div class='row'>
+            <form class="navbar-form navbar-right" id="add-animal-form" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="animal-input" placeholder="Add an animal">
+                </div>
+                <button type="submit" class="btn btn-default" id="submit-animal-button" value="Submit">Submit</button>
+            </form>
+        </div>
+        <div class='row'>
+            <h1 class='title'>Animal Freeze Tag</h1>
+            <h2 class='title'>Giphy Addition!</h2>
+            <hr class="my-4">
+        </div>
+
         <div class='row'>
 
             <div id="animal-buttons"></div>
         </div>
         <div class='row'>
-            <div class='col-sm-6'>
-                <form id="add-animal-form">
-                    <label for="animal-input">Add an animal</label>
-                    <input type="text" id="animal-input">
-                    <br>
-
-                    <input type="button" id="submit-animal-button" value="Submit">
-                </form>
-            </div>
-            <div class='col-sm-6'>
-                <div id="animals"></div>
-            </div>
-
+            <div id="animals"></div>
         </div>
 
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="./assets/javascript/app.js"></script>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <script src="./assets/javascript/app.js"></script>
 </body>
 
 </html>

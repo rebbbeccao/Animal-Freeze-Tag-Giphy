@@ -34,13 +34,16 @@ $(document).on('click', '.animal-button', function() {
   var queryURL =
     'http://api.giphy.com/v1/gifs/search?q=' +
     type +
-    '&api_key=Ob1qUTKq8pdxE6QqYZDJ7jiFTOMeUg2F&limit=10&rating=pg-13';
+    '&api_key=Ob1qUTKq8pdxE6QqYZDJ7jiFTOMeUg2F&limit=9&rating=pg-13';
   $.ajax({ url: queryURL, method: 'GET' }).done(function(response) {
     var results = response.data;
 
     for (var j = 0; j < results.length; j++) {
       console.log(results[j]);
-      var searchDiv = $("<div class='search-item'>");
+
+      var searchDiv = $(
+        "<div class='col-sm-4' id='search-col'><div class='search-item'></div>"
+      );
       var rating = results[j].rating;
       var p = $('<p>').text('Rating: ' + rating);
       var animated = results[j].images.fixed_height.url;

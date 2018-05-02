@@ -5,7 +5,7 @@ body {
 }
 
 form {
-  float: right;
+  float: none;
   width: 25%;
   padding: 12px;
 }
@@ -24,18 +24,33 @@ button,
   background: teal;
   margin: 8px;
 }
-
-.animal-button {
-  padding: 10px;
+.title {
+  text-align: center;
+  float: none;
 }
 
-#animals {
-  float: left;
+.animal-button {
+  padding: 15px;
+  margin: 12px;
+}
+
+#animal-buttons {
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  float: none;
   padding: 20px;
   width: 70%;
 }
-.col-sm-6 {
-  /* display: inline-block; */
-  float: none;
+
+.row {
+  margin-bottom: 15px;
   align-content: center;
 }
+
+/* .col-sm-6 {
+  align-content: center;
+  margin-left: auto;
+  
+  display: inline-block;
+} */
