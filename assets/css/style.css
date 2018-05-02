@@ -19,7 +19,9 @@ label {
 }
 p {
   font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
   color: white;
+  margin-top: 12px;
 }
 button {
   font-family: 'IBM Plex Mono', monospace;
