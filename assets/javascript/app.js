@@ -29,6 +29,16 @@ function createButtons(arrayToUse, classToAdd, areaToAdd) {
 }
 
 $(document).on('click', '.animal-button', function() {
+  // Scroll to #animals div
+  $('html, body').animate(
+    {
+      scrollTop: $('#animals')
+        .first()
+        .offset().top
+    },
+    500
+  );
+
   $('#animals').empty();
   var type = $(this).data('type');
   var queryURL =
