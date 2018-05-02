@@ -63,7 +63,7 @@ $(document).on('click', '.animal-button', function() {
       image.attr('data-still', still);
       image.attr('data-animated', animated);
       image.attr('data-state', 'still');
-      image.addClass('animalImage');
+      image.addClass('animal-image');
       searchDiv.append(p);
       searchDiv.append(image);
       $('#animals').append(searchDiv);
@@ -71,7 +71,7 @@ $(document).on('click', '.animal-button', function() {
   });
 });
 
-$(document).on('click', '.animalImage', function() {
+$(document).on('click', '.animal-image', function() {
   var state = $(this).data('state');
   if (state === 'still') {
     console.log('animated clicked');

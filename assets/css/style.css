@@ -1,23 +1,28 @@
 body {
   font: 20px arial, serif;
-  background: lightcyan;
+  background-image: url('../images/fur.jpg');
   height: 100%;
 }
 
 form {
+  font-family: 'IBM Plex Mono', monospace;
   float: none;
   width: 25%;
   padding: 12px;
 }
 
 label {
+  font-family: 'IBM Plex Mono', monospace;
   display: block;
   margin-bottom: 10px;
   font-weight: 700;
 }
-
-button,
-#submit-animal-button {
+p {
+  font-family: 'IBM Plex Mono', monospace;
+  color: white;
+}
+button {
+  font-family: 'IBM Plex Mono', monospace;
   padding: 10px 15px;
   font: 18px arial, serif;
   color: white;
@@ -25,11 +30,15 @@ button,
   margin: 8px;
 }
 .title {
+  font-family: 'IBM Plex Mono', monospace;
+  color: white;
   text-align: center;
   float: none;
 }
 
 .animal-button {
+  font-family: 'IBM Plex Mono', monospace;
+  color: white;
   padding: 15px;
   margin: 12px;
 }
@@ -37,8 +46,6 @@ button,
 #animal-buttons {
   margin-left: auto;
   margin-right: auto;
-  align-content: center;
-  float: none;
   padding: 20px;
   width: 70%;
 }
@@ -47,10 +54,3 @@ button,
   margin-bottom: 15px;
   align-content: center;
 }
-
-/* .col-sm-6 {
-  align-content: center;
-  margin-left: auto;
-  
-  display: inline-block;
-} */
